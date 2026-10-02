@@ -1,0 +1,36 @@
+.card {
+    background: #000;
+    color: white;
+    width: 560px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1, p{
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.links{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+/* inline elements are elements that do not start on a new line and only take up as much width as necessary. Examples of inline elements include <span>, <a>, and <strong>. */
+strong {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 20px;
+    /*not working because strong is an inline element and inline elements do not respect width and height properties*/
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
