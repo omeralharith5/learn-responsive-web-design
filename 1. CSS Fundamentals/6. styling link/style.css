@@ -1,0 +1,57 @@
+.card {
+    background: #000;
+    color: white;
+    width: 560px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1, p{
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.links{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+strong {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 20px;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+span{
+    color: yellow;
+}
+a{
+    color: yellow;
+}
+a:link{
+    color: yellow;
+}
+a:visited{
+    color: white;
+}
+a:focus{
+    color: red;
+}
+a:hover{
+    color: firebrick;
+}
+a:active{
+    color: blue;
+}
