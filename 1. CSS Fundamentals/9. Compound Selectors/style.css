@@ -33,7 +33,17 @@ header {
     color: white;
 }
 
-/* Compound selector for buttons inside the first section */
+/* 
+this is a comment to explain specificity in CSS. Specificity is a way for browsers to determine which CSS rule to apply when multiple rules could apply to the same element. The more specific a selector is, the higher its specificity value, and the more likely it is to be applied.
+Specificity is calculated based on the types of selectors used in a rule. The specificity value is represented as a four-part number, with each part representing a different type of selector. The parts are as follows:
+elements selector point 001
+class selector point 010
+id selector point 100
+compound selector point base on elements and class and id selector point 111
+inline style point 1000
+important point 1000
+*/
+/* compound selector for specific buttons point 020 */
 .section-one .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -46,12 +56,10 @@ header {
 .section-one .btn:hover {
     background: white;
 }
-
+/* compound selector for specific buttons point 011 */
 .section-two a {
     color: black;
 }
-
-/* Compound selector for buttons inside the second section */
 .section-two .btn {
     display: inline-block;
     padding: 12px 25px;
