@@ -17,6 +17,9 @@ h1 {
     /* 3 times the root font size */
     /* This will inherit the font size from the root element (html) */
     /* em vs rem em means relative to parent element, rem means relative to root element */
+    /* use rem for font sizes
+        use em for margins and padding
+        use em and percentages for width */
     font-size: 3rem;
     margin: 0;
 }
