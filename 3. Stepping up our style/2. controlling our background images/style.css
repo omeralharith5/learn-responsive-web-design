@@ -1,0 +1,17 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+} 
+
+/* Background Image Styles 
+    background-position method: top, bottom, left, right, center
+    background-size method: cover, contain, auto
+    background-repeat method: repeat, repeat-x, repeat-y, no-repeat
+*/
+.cat {
+    padding:  300px;
+    background-image: url(cat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
