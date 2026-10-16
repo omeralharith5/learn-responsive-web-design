@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #2C73D2;
+    color: #fff;
+    text-align: center;
+}
+
+.flex-container {
+    border: 10px solid #F9F871;
+    width: 80%;
+    margin: 0 auto;
+    padding: .25em;
+    
+    display: flex;
+}
+
+.flex-item {
+    background: #8BEE86;
+    margin: .5em;
+    padding: .5em;
+    color: #424656;
+    
+    width: 200px;
+}
+
+.flex-item-1 {
+    background: plum;
+    /* flex-grow means the item will take up more space */
+    flex-grow: 1;
+    
+    /* flex-shrink means the item will reduce in size if necessary */
+    flex-shrink: 0;
+
+    /* flex-basis defines the initial size of the flex item 
+        in this case, the flex item will be 100px wide, but it can grow or shrink depending on the other flex items and the available space.
+        in case of flex-direction: row, the flex-basis will be the width of the flex item, and in case of flex-direction: column, the flex-basis will be the height of the flex item.    
+    */
+    flex-basis: 100px;
+    flex: 1 0 100px; /* flex shorthand property, equivalent to flex-grow: 1; flex-shrink: 0; flex-basis: 100px; */
+
+    align-self: flex-start; /* align-self overrides the align-items property of the flex container for this specific flex item */
+}
+
+.flex-item-2 {
+    background: red;
+    flex-grow: 2;
+}
+
+.flex-item-3 {
+    flex-grow: 0;
+}

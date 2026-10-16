@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: baseline;
     
+    /* align-content means we are aligning the lines of flex items */
     align-content: flex-end;
     flex-wrap: wrap;
     
