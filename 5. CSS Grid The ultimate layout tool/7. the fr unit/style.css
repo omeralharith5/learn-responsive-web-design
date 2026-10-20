@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  /* fr unit (fraction) distributes available space proportionally */
+  /* 3fr, 2fr, 1fr means the first column takes 3 parts, the second takes 2 parts, and the third takes 1 part of the available space */
+  /* fr like flex-grow and flex-shrink work together */
+  grid-template-columns: 3fr 2fr minmax(100px, 1fr);
+}
+
+.grid-item {
+  background: #B823C1;
+  color: white;
+  padding: 1em 2em;
+  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big {
+    padding: 3em 2em;
+    background: #FF5670;
+}
