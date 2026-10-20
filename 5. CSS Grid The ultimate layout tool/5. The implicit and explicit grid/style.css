@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-rows: 50px 100px 200px;
+  /* implicit grid rows will be created as needed */
+  grid-auto-rows: 500px;
+  grid-template-columns: 300px 500px;
+  /* implicit grid columns will be created as needed */
+  grid-auto-columns: 120px;
+}
+
+.grid-item {
+  background: #B823C1;
+  color: white;
+  padding: 1em 2em;
+  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big {
+    padding: 3em 2em;
+    background: #FF5670;
+    /* implicit grid column when grid columns not explicitly defined */
+    grid-column: 4 / 5;
+}
