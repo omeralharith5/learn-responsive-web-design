@@ -1,0 +1,53 @@
+.grid {
+  display: grid;
+  grid-template-columns: 5em auto 5em;
+  /* grid-template-areas defines the layout of the grid by specifying the names of the areas */
+  grid-template-areas: 
+    "header header header" 
+    "content content content"
+    "sidebar sidebar sidebar"
+    "footer footer footer";
+}
+
+@media (min-width: 600px) {
+  .grid {
+    /* minmax() function sets a minimum and maximum size for the column */
+    grid-template-columns: 100px minmax(200px, 500px) minmax(100px, 200px) 100px;
+    grid-template-areas: 
+      "header header header header"
+      ". content sidebar ."
+      "footer footer footer footer";
+  }
+}
+
+.header {
+  /* using the grid-area property, we can assign a grid item to a specific area defined in the grid-template-areas property */
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.big {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-item {
+  background: #B823C1;
+  color: white;
+  padding: 1em 2em;
+  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big {
+    padding: 3em 2em;
+    background: #FF5670;
+}
